@@ -1,0 +1,3130 @@
+*{
+    direction: rtl;
+}
+
+body {
+    direction: rtl;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.clr {
+    clear: both;
+}
+
+/* start icon back */
+
+.iconBack {
+   
+    position: absolute;
+    top: 16%;
+    right: 40px;
+}
+
+.iconBack i {
+    font-size: 38px;
+    color:rgb(72, 121, 218) !important;
+}
+ /* end icon back */
+
+/* -----------------------------------------------Start الرئيسيه Style-----------------------------------------------*/
+
+/* start different Button */
+
+.different {
+    position: fixed;
+    padding: 10px;
+    right: 20px;
+    bottom: 50px;
+    background-color: rgb(65, 103, 173);
+    color: white;
+    font-size: 20px;
+    border: transparent;
+    display: none;
+    z-index: 2222;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+/* end different Button */
+
+/* start color box */
+
+#all-box {
+    position: fixed;
+    left: 0;
+    top: 100px;
+    z-index: 99999;
+}
+
+#color-box {
+    background-color: rgb(238, 235, 235);
+    float: left;
+    padding: 30px;
+    display: none;
+}
+
+#icon-box {
+    float: left;
+    font-size: 20px;
+    background-color: rgb(65, 103, 173);
+    color: white;
+    padding: 10px;
+}
+
+.color-item {
+    width: 30px;
+    height: 30px;
+    background-color: indigo;
+    display: inline-block;
+}
+
+/* end color box */
+/* Start Navbar Style */
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+}
+@media (max-width: 992px) { 
+    .navbar-nav li{
+        text-align: right;
+    }
+    .nav-link{
+        margin-right: 0px !important;
+    }
+}
+.navbar-nav li>a {
+    color: rgb(255, 255, 255) !important;
+    transition: background-color .2s, color .2s;
+    font-size: 1.3rem;
+}
+
+.navbar-nav li a.active {
+    color: rgb(83 65 255) !important;
+}
+.navbar-toggler-icon {
+    color: rgb(24, 11, 145) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(83 65 255) !important;
+}
+
+/* End Navbar Style */
+
+
+/* Start Logo Style */
+
+.logo {
+    height: 85px;
+    position: absolute;
+    top: 0;
+    left: 47%;
+    width: 6.5rem !important;
+    background-color: white;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    box-shadow: 0 0 20px rgba(48, 37, 170, 0.5);
+
+}
+
+.logo h5 {
+    color: rgb(52, 88, 156);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 900 !important;
+}
+
+.logo h6 {
+    font-weight: 200;
+    font-size: 11px;
+    text-align: center;
+    font-weight: 500 !important;
+}
+
+.logo img {
+    width: 50%;
+    margin-left: 0%;
+    height: 6vh;
+}
+
+/* Start Responsive For logo */
+
+
+
+
+@media(max-width:991px) {
+    .logo {
+        display: none !important ;
+    }
+}@media (min-width:992px)and (max-width:1200px) {
+    .logo {
+        display: block;
+    }
+}
+@media (min-width:1200px) {
+    .logo {
+        display: block;
+    }
+}
+
+/* End Responsive For logo */
+
+/* End Logo Style */
+/* start slider Style*/
+
+.carousel-inner {
+    color: white;
+}
+
+.carousel-inner .carousel-item .pic {
+    background-image: url(../images/slider-image-1.jpg);
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+}
+
+.carousel-inner .carousel-item .photo {
+    background-image: url(../images/slider-image-2.jpg);
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+}
+
+.layer .typed {
+    padding-top: 34%;
+    float: right;
+    margin-left: 60%;
+}
+
+.carousel-item .layer .type2 {
+    padding-top: 34%;
+    float: right;
+    margin-left: 60%;
+}
+
+.carousel-inner .carousel-item .layer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+/* Start Responsive For Slider */
+
+@media screen and (min-width:992px)and (max-width:1200px) {
+    .layer .typed {
+        padding-top: 42%;
+        margin-left: 50%;
+    }
+    .carousel-item .layer .type2 {
+        padding-top: 42%;
+        margin-left: 50%;
+    }
+}
+
+@media screen and (min-width:768px)and (max-width:991px) {
+    .layer .typed {
+        padding-top: 46%;
+        margin-left: 48%;
+    }
+    .carousel-item .layer .type2 {
+        padding-top: 46%;
+        margin-left: 48%;
+    }
+}
+
+@media screen and (min-width:600px)and (max-width:767px) {
+    .layer .typed {
+        padding-top: 60%;
+        margin-left: 48%;
+    }
+    .carousel-item .layer .type2 {
+        padding-top: 60%;
+        margin-left: 48%;
+    }
+}
+
+@media screen and (max-width:599px) {
+    .layer .typed {
+        padding-top: 70%;
+        margin-left: 43%;
+    }
+    .carousel-item .layer .type2 {
+        padding-top: 70%;
+        margin-left: 43%;
+    }
+}
+
+/* Start Responsive For Slider */
+
+/* End Slider Style */
+
+/* Start Introduction Section */
+
+.intro hr {
+    position: relative;
+    background-color: rgb(52, 88, 156);
+}
+
+.intro h2 {
+    background-color: rgb(52, 88, 156);
+    color: white;
+    border-radius: 30px;
+    position: absolute;
+    width: 25%;
+    top: 30%;
+    left: 39%;
+    font-size: 1.5rem;
+}
+
+.intro p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(146, 144, 144);
+    width: 70%;
+    margin: auto;
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.intro img {
+    width: 50%;
+}
+
+/* Start Responsive Introduction Section  */
+
+@media screen and (min-width:768px)and (max-width:991px) {
+    .intro hr {
+        position: relative;
+    }
+    .intro h2 {
+        font-size: 1.3rem;
+        position: absolute;
+        width: 30%;
+        top: 30%;
+        left: 36%;
+    }
+    .intro p {
+        font-size: 1.1rem;
+        width: 80%;
+    }
+    .intro img {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width:600px)and (max-width:767px) {
+    .intro hr {
+        position: relative;
+    }
+    .intro h2 {
+        font-size: 1.1rem;
+        position: absolute;
+        width: 40%;
+        top: 32%;
+        left: 30%;
+    }
+    .intro p {
+        font-size: 1rem;
+        width: 95%;
+    }
+    .intro img {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .intro hr {
+        position: relative;
+    }
+    .intro h2 {
+        font-size: 1rem;
+        position: absolute;
+        width: 35%;
+        top: 30%;
+        left: 33%;
+    }
+    .intro p {
+        font-size: 0.9rem;
+        font-weight: 600;
+        width: 90%;
+    }
+    .intro img {
+        width: 70%;
+    }
+}
+
+/* End Responsive Introduction Section  */
+
+/*  End Introduction Section */
+
+/*  Start All-Services */
+
+.all hr {
+    position: relative;
+    background-color: rgb(52, 88, 156);
+}
+
+.all h2 {
+    background-color: rgb(52, 88, 156);
+    color: white;
+    border-radius: 30px;
+    position: absolute;
+    font-size: 1.5rem;
+    width: 25%;
+    top: -10%;
+    left: 39%;
+    padding: 10px;
+}
+
+.all .content img {
+    height: 200px;
+}
+
+.all .content .card {
+    box-shadow: 0 0 10px rgb(52, 88, 156);
+    transition: transform 0.5s;
+}
+
+.all .content .card:hover {
+    transform: scale(1.1);
+    background-color: rgba(43, 69, 116, 0.877);
+}
+
+.all .content .card-body {
+    background-color: rgba(52, 88, 156, 0.836);
+}
+
+.all .content h5 {
+    font-size: 1.7rem;
+    color: white;
+    text-decoration: none;
+}
+
+/* Start Responsive for All-Services Section */
+
+@media screen and (min-width:768px)and (max-width:991px) {
+    .all hr {
+        position: relative;
+    }
+    .all h2 {
+        font-size: 1.3rem;
+        position: absolute;
+        width: 30%;
+        top: -10%;
+        left: 36%;
+    }
+}
+
+@media screen and (min-width:600px)and (max-width:767px) {
+    .all hr {
+        position: relative;
+    }
+    .all h2 {
+        font-size: 1.1rem;
+        position: absolute;
+        width: 40%;
+        top: -10%;
+        left: 30%;
+    }
+    .services-item .card {
+        width: 65%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .all hr {
+        position: relative;
+    }
+    .all h2 {
+        font-size: 1.1rem;
+        position: absolute;
+        width: 35%;
+        top: -5%;
+        left: 33%;
+    }
+    .services-item .card {
+        width: 60%;
+        margin: auto;
+    }
+}
+
+/* End Responsive for All-Services Section */
+
+/* End All-Services */
+
+/* start AllNews */
+
+.allNews hr {
+    position: relative;
+    background-color: rgb(52, 88, 156);
+}
+
+.allNews h2 {
+    background-color: rgb(52, 88, 156);
+    color: white;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    width: 25%;
+    position: absolute;
+    top: -10%;
+    left: 39%;
+}
+
+@keyframes news {
+    0% {
+        background: linear-gradient(0deg, black, rgb(65, 103, 173));
+    }
+    10% {
+        background: linear-gradient(0deg, black, rgb(0, 27, 180));
+    }
+    20% {
+        background: linear-gradient(0deg, black, rgb(80, 33, 141));
+    }
+    30% {
+        background: linear-gradient(0deg, black, rgb(160, 163, 129));
+    }
+    40% {
+        background: linear-gradient(0deg, black, rgb(85, 61, 117));
+    }
+    50% {
+        background: linear-gradient(0deg, black, rgb(132, 109, 139));
+    }
+    60% {
+        background: linear-gradient(0deg, black, rgb(88, 86, 65));
+    }
+    70% {
+        background: linear-gradient(0deg, black, rgb(61, 99, 117));
+    }
+    80% {
+        background: linear-gradient(0deg, black, rgb(16, 41, 73));
+    }
+    90% {
+        background: linear-gradient(0deg, black, rgb(162, 132, 187));
+    }
+    100% {
+        background: linear-gradient(0deg, black, rgb(23, 23, 114));
+    }
+}
+
+.news-item2 {
+    color: white;
+    box-shadow: 0 0 20px rgba(65, 103, 173, 0.5);
+    border-radius: 30px;
+    animation-name: news;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.news-item2 p {
+    font-size: 1.5rem;
+}
+
+.carousel-control-prev i, .carousel-control-next i {
+    color: rgb(52, 88, 156);
+    font-size: 22px;
+}
+
+.news-btn button {
+    background-color: rgb(52, 88, 156);
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+.allNews button {
+    border: none;
+}
+
+/* Start Responsive for AllNews Section */
+
+@media screen and (min-width:768px)and (max-width:991px) {
+    .allNews hr {
+        position: relative;
+    }
+    .allNews h2 {
+        font-size: 1.3rem;
+        position: absolute;
+        width: 30%;
+        top: -10%;
+        left: 36%;
+    }
+    .news-item2 {
+        margin: auto;
+    }
+}
+
+@media screen and (min-width:600px)and (max-width:767px) {
+    .allNews hr {
+        position: relative;
+    }
+    .allNews h2 {
+        font-size: 1.1rem;
+        position: absolute;
+        width: 40%;
+        top: -5%;
+        left: 30%;
+    }
+    .news-item2 {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .allNews hr {
+        position: relative;
+    }
+    .allNews h2 {
+        font-size: 1.1rem;
+        position: absolute;
+        width: 35%;
+        top: -5%;
+        left: 33%;
+    }
+    .news-item2 {
+        width: 60%;
+        margin: auto;
+    }
+}
+
+/* End Responsive for AllNews Section */
+
+/* end AllNews */
+
+/* /start featured work/ */
+
+.featured-work hr {
+    position: relative;
+    background-color: rgb(52, 88, 156);
+}
+
+.featured-work h2 {
+    background-color: rgb(52, 88, 156);
+    color: white;
+    width: 25%;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    position: absolute;
+    top: -10%;
+    left: 39%;
+}
+
+.featured-work {
+    padding-bottom: 8%;
+}
+
+#lightBoxContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: none;
+}
+
+#lightBoxItem {
+    height: 400px;
+    width: 700px;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+#close {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#lightBoxItem i {
+    margin: 20px;
+    font-size: 1.5rem;
+    color: rgb(24, 38, 236);
+}
+
+.featured-work ul li {
+    font-size: 1.3rem;
+    color: rgb(52, 88, 156);
+    border: 2px solid rgb(52, 88, 156);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.featured-work ul li.active, .featured-work ul li:hover {
+    background-color: rgb(52, 88, 156);
+    color: #fff;
+    border: 2px solid rgb(52, 88, 156);
+    cursor: pointer;
+}
+
+.featured-work .shuffle-imgs .row .col-md {
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.featured-work ul {
+    margin-right: 10%;
+}
+
+/* Start Responsive for  Featured  Section */
+
+@media screen and (min-width:768px)and (max-width:991px) {
+    .featured-work hr {
+        position: relative;
+    }
+    .featured-work h2 {
+        font-size: 1.3rem;
+        position: absolute;
+        width: 30%;
+        top: -10%;
+        left: 36%;
+    }
+    .featured-work ul {
+        width: 100%;
+        margin-right: 5%;
+    }
+    .featured-work ul li {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width:600px)and (max-width:767px) {
+    .featured-work hr {
+        position: relative;
+    }
+    .featured-work h2 {
+        font-size: 1.1rem;
+        position: absolute;
+        width: 40%;
+        top: -5%;
+        left: 30%;
+    }
+    .featured-work ul {
+        width: 60%;
+        margin-right: 16%;
+    }
+    .featured-work ul li {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .featured-work hr {
+        position: relative;
+    }
+    .featured-work h2 {
+        font-size: 1rem;
+        position: absolute;
+        width: 35%;
+        top: -5%;
+        left: 33%;
+    }
+    .featured-work ul {
+        width: 50%;
+        margin-right: 20%;
+    }
+    .featured-work ul li {
+        font-size: 1rem;
+    }
+}
+
+/* End Responsive for  Featured  Section */
+
+/* /end featured work/ */
+/* start footer */
+
+footer {
+    background-image: url(../images/fooooooot.jpg);
+    background-size: cover;
+    color: seashell;
+    text-align: right;
+    padding-top: 20px;
+    width:100% !important;
+}
+
+footer .footerLogo {
+    margin-top: 1.5rem;
+}
+
+footer .footerHeader {
+    margin-top: 2.8rem;
+}
+
+footer .footerLogo img {
+    background-color: rgba(148, 147, 147, 0.61);
+    width: 80px;
+    height:80px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+footer .item3{
+    height:100%;
+}
+footer .item1,footer .item2 {
+    border-left: 0.05px solid rgba(52, 88, 156, 0.836) !important;
+    height:100%;
+    border-bottom: none !important;
+}
+@media (max-width: 768px) { 
+    footer .item1,footer .item2 {
+    padding-bottom: 20px;
+    border-left: none !important;
+    border-bottom: 0.05px solid rgba(52, 88, 156, 0.836) !important;
+    margin-bottom: 40px;
+}
+}
+
+
+footer .datalist ul {
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+footer .datalist ul li {
+    font-size: 1rem;
+    color: rgba(253, 253, 253, 0.658);
+    text-decoration: none;
+}
+
+footer .datalist ul li::before {
+    content: "";
+    width: 0.4rem;
+    height: 0.4rem;
+    display: inline-block;
+    background-color: rgba(52, 88, 156, 0.836);
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+footer .item1 .datalist .brdVirtical {
+    width: 70%;
+    height: 0.05rem;
+    background-color: rgba(52, 88, 156, 0.836);
+}
+
+footer .item1 .datalist .icons i {
+    cursor: pointer;
+    padding: 2%;
+    font-size: 1.7rem;
+    color: rgba(255, 245, 238, 0.815);
+    border: 1.5px solid rgba(148, 147, 147, 0.61) !important;
+}
+
+footer span {
+    font-size: 1rem;
+    color: rgba(253, 253, 253, 0.658);
+    margin-right: 1.5rem;
+    margin-top: 0.8rem;
+}
+
+footer .item1 .datalist .icons i:hover {
+    color: rgba(52, 88, 156, 0.836);
+    border: 1.5px solid rgba(52, 88, 156, 0.836) !important;
+    background-color: rgba(148, 147, 147, 0.26);
+}
+
+footer .item1 .datalist .icons .spcial {
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+footer .item2 .time-icon i, footer .item3 .time-icon i {
+    color: rgba(52, 88, 156, 0.836);
+    font-size: 1.6rem;
+    border: 1.5px solid rgba(255, 245, 238, 0.815) !important;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+
+footer ul li {
+    text-align: right;
+}
+
+footer .item1 .icons {
+    margin-right: 3rem;
+}
+
+footer .item2 .item2Content h5 {
+    margin-right: 2rem;
+}
+
+footer .item2 .mapDiv {
+    margin-right: 2rem;
+}
+
+
+
+
+.copyright {
+    font-size: 0.8rem;
+    background-color: rgb(26, 24, 24);
+    color: rgb(179, 173, 173);
+}
+
+footer .item2 iframe {
+    width: 100%;
+}
+
+/* Start Responsive for Footer Section  */
+
+@media screen and (min-width:992px)and (max-width:1200px) {}
+
+@media screen and (min-width:768px)and (max-width:991px) {
+    footer footerLogo {
+        width: 8%;
+        margin-top: 1.5rem;
+    }
+    footer footerHeader {
+        margin-top: 2.8rem;
+    }
+    footer .item1 .icons {
+        margin-right: 0;
+    }
+    footer .item1 .row {
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width:600px)and (max-width:767px) {
+    footer .start .row {
+        display: flex;
+        justify-content: center;
+    }
+    footer footerLogo {
+        margin-right: 4rem;
+        width: 9%;
+        margin-top: 1.5rem;
+        margin-right: 0;
+    }
+    footer footerHeader {
+        margin-top: 2.6rem;
+    }
+    footer .brd {
+        display: block;
+        margin: auto;
+        margin-top: 1rem;
+        width: 70%;
+        height: 0.05rem;
+        background-color: rgba(52, 88, 156, 0.836);
+    }
+    footer .item1 .row{
+        display: flex;
+        justify-content: center;
+    }
+    footer .item2 {
+        margin-top: 1rem;
+    }
+    footer .item2 .item2Content {
+        text-align: center;
+    }
+    footer .item2 iframe {
+        width: 70%;
+    }
+    footer .item2 .item2Content h5 {
+        margin-right: 0;
+    }
+    footer .item2 .mapDiv .map {
+        display: flex;
+        justify-content: center;
+    }
+    footer .item3 {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:600px) {
+    footer .start .row {
+        display: flex;
+        justify-content: center;
+    }
+    footer footerLogo {
+        width: 9%;
+        margin-top: 2.2rem;
+    }
+    footer footerHeader {
+        margin-top: 2.6rem;
+    }
+    footer .brd {
+        margin: auto;
+        margin-top: 1rem;
+        width: 70%;
+        height: 0.05rem;
+        background-color: rgba(52, 88, 156, 0.836);
+    }
+    footer .item1 .row{
+        display: flex;
+        justify-content: center;
+    }
+    footer .item2 {
+        margin-top: 1rem;
+        margin-right: 3.5rem;
+    }
+    footer .item2 .item2Content {
+        text-align: center;
+    }
+    footer .item2 iframe {
+        width: 70%;
+    }
+    footer .item2 .item2Content h5 {
+        margin-right: 0;
+    }
+    footer .item2 .mapDiv .map {
+        display: flex;
+        justify-content: center;
+    }
+    footer .item3 {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* End Responsive for Footer Section  */
+
+/* End Footer */
+/* ----------------------------------------------- End الرئيسيه Style----------------------------------------------- */
+
+
+/*----------------------------- start services page =================================*/
+
+/* Start Services-Header */
+
+.services-header {
+    background-image: url(../images/خدمات.jpg);
+    height: 60vh;
+    background-attachment: fixed;
+    text-align: center;
+    background-size: cover;
+    color: white;
+    position: relative;
+}
+
+.serv-opacity {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.serv-opacity h2 {
+    margin-top: 30vh;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.serv-opacity h2:hover {
+    color: rgb(52, 88, 156);
+}
+
+.serv-back-opacity li {
+    padding-bottom: 5px;
+}
+
+.serv-back-opacity li a {
+    color: rgb(52, 88, 156);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* End Services-Header */
+
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+.item-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(52, 88, 156, 0.733);
+    transform: translateY(20PX);
+    transition: transform .8s;
+    opacity: 0;
+}
+
+.item-layer:hover {
+    transform: translateY(0PX);
+    opacity: 1;
+}
+
+.item-layer ul {
+    list-style: none;
+    margin-left: 10%;
+}
+
+.item-layer ul li {
+    margin-left: 10% !important;
+    color: rgb(223, 222, 222);
+    font-weight: 600;
+}
+
+.item-layer ul li::before {
+    content: "";
+    width: 0.4rem;
+    height: 0.4rem;
+    display: inline-block;
+    background-color: rgb(158, 154, 154);
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+/* End Services-section */
+
+#afterEducation {
+    padding-bottom: 150px;
+}
+
+/* Start Responsive For Services Page */
+
+@media screen and (min-width:1200px) {
+    .serv hr {
+        position: relative;
+    }
+    .serv h2 {
+        font-size: 1.6rem;
+        position: absolute;
+        width: 25%;
+        top: -10%;
+        left: 38%;
+    }
+    .serv .card {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width:992px)and (max-width:1200px) {
+    .serv hr {
+        position: relative;
+    }
+    .serv h2 {
+        font-size: 1.6rem;
+        position: absolute;
+        width: 25%;
+        top: -10%;
+        left: 38%;
+    }
+    .serv .card {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width:768px)and (max-width:991px) {
+    .serv hr {
+        position: relative;
+    }
+    .serv h2 {
+        font-size: 1.6rem;
+        position: absolute;
+        width: 40%;
+        top: -10%;
+        left: 30%;
+    }
+    .serv .card {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width:600px)and (max-width:767px) {
+    .serv hr {
+        position: relative;
+    }
+    .serv h2 {
+        font-size: 1.6rem;
+        position: absolute;
+        width: 30%;
+        top: -10%;
+        left: 35%;
+    }
+    .serv .card {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .serv hr {
+        position: relative;
+    }
+    .serv h2 {
+        font-size: 1.4rem;
+        position: absolute;
+        width: 50%;
+        top: -5%;
+        left: 25%;
+    }
+    .serv .card {
+        width: 85%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+}
+
+/* End Responsive For Services Page */
+
+/*----------------------------- end services page =================================*/
+
+/* ----------------------------------start complaints page----------------------------- */
+
+/* start complaints media query */
+ 
+@media screen and (min-width:992px)and (max-width:1200px) {
+    .complantInfo {
+        width: 60% !important;
+        margin: auto;
+        padding: 13% 0 4% 0 !important;
+    }
+    .specialSec
+    {
+        padding-top: 1% !important;
+    }
+    .pen-section .i1, .pen-section .i2 {
+        width: 6% !important;
+    }
+    .pen-section .p1, .pen-section .p2 {
+        width: 75% !important;
+    }
+    .complaintImg img {
+        width: 100% !important;
+        margin: auto !important;
+    }
+    .contactPicture {
+        margin-top: 35% !important;
+        width: 100% !important;
+    }
+}
+
+@media screen and (min-width:768px)and (max-width:991px) {
+    .complantInfo {
+        width: 100% !important;
+        margin: auto !important;
+        padding: 15% 0 6% 0 !important;
+    }
+    .pen-section .i1, .pen-section .i2 {
+        width: 10% !important;
+    }
+    .specialSec{
+        padding-top: 1% !important;
+    }
+    .pen-section .p1, .pen-section .p2 {
+        width: 80% !important;
+    }
+    .complaintImg img {
+        width: 100% !important;
+        margin: auto !important;
+    }
+    .complaintImg {
+        width: 60% !important;
+        margin: auto !important;
+        padding-top: 30px !important;
+    }
+    .complaints-securety {
+        margin: auto !important;
+        width: 100% !important;
+    }
+    .contactUsContain {
+        background: linear-gradient(45deg, rgb(52, 88, 156), white);
+        width: 100% !important;
+        height: 530px !important;
+        margin: auto;
+        margin-bottom: 15%;
+        border-radius: 30px;
+    }
+    .contactInput button {
+        margin: auto;
+        background-color: rgb(52, 88, 156);
+        color: white;
+        padding: 5px 30px;
+        margin-left: 8% !important;
+        margin-top: 20px;
+        border-radius: 10px;
+        font-weight: 600;
+    }
+    .contactInput button:hover {
+        color: rgb(52, 88, 156);
+        background-color: white;
+        font-weight: 600;
+    }
+    .contactInput input {
+        width: 100% !important;
+        outline: 0;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(240, 236, 236);
+    }
+    .contactInput input::placeholder {
+        color: rgb(170, 166, 166);
+        font-weight: 600;
+    }
+    .contactInput textarea::placeholder {
+        color: rgb(170, 166, 166);
+        font-weight: 600;
+    }
+    .contactInput h4 {
+        color: rgb(52, 88, 156);
+        margin-top: 20px;
+    }
+    .contactInput textarea {
+        width: 100% !important;
+        outline: 0;
+        border: none;
+        height: 70px !important;
+        border-radius: 10px;
+        background-color: rgb(240, 236, 236);
+    }
+    .contactPicture img {
+        width: 85% !important;
+    }
+    .formIcon {
+        margin-top: 30px;
+    }
+    .formIcon i {
+        font-size: 40px !important;
+        color: rgb(52, 88, 156);
+        padding-left: 10% !important;
+    }
+    .formIcon i:hover {
+        color: white;
+    }
+    .contactPicture img {
+        border-radius: 50% !important;
+        margin-top: 30% !important;
+    }
+}
+
+@media screen and (min-width:600px)and (max-width:767px) {
+    .complaintImg img {
+        width: 70% !important;
+        margin: auto !important;
+        margin: 10% 0 2% 0 !important;
+    }
+    .complaintSec1 {
+        margin: auto !important;
+    }
+    .complantInfo {
+        width: 100% !important;
+        margin: auto;
+        padding: 23% 0 6% 0 !important;
+    }
+    .pen-section .i1, .pen-section .i2 {
+        width: 10% !important;
+    }
+    .pen-section .p1, .pen-section .p2 {
+        width: 90% !important;
+    }
+    .contactUsContain {
+        background: linear-gradient(45deg, rgb(52, 88, 156), white);
+        width: 100% !important;
+        height: 530px !important;
+        margin: auto;
+        margin-bottom: 15%;
+        border-radius: 30px;
+    }
+    .contactInput button {
+        margin: auto;
+        background-color: rgb(52, 88, 156);
+        color: white;
+        padding: 5px 30px;
+        margin-left: 10% !important;
+        margin-top: 20px;
+        border-radius: 10px;
+        font-weight: 600;
+    }
+    .contactInput button:hover {
+        color: rgb(52, 88, 156);
+        background-color: white;
+        font-weight: 600;
+    }
+    .contactInput input {
+        width: 100% !important;
+        outline: 0;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(240, 236, 236);
+    }
+    .contactInput input::placeholder {
+        color: rgb(170, 166, 166);
+        font-weight: 600;
+    }
+    .contactInput textarea::placeholder {
+        color: rgb(170, 166, 166);
+        font-weight: 600;
+    }
+    .contactInput h4 {
+        color: rgb(52, 88, 156);
+        margin-top: 20px;
+    }
+    .contactInput textarea {
+        width: 100% !important;
+        outline: 0;
+        border: none;
+        height: 70px !important;
+        border-radius: 10px;
+        background-color: rgb(240, 236, 236);
+    }
+    .contactPicture img {
+        width: 100% !important;
+    }
+    .formIcon {
+        margin-top: 30px;
+    }
+    .formIcon i {
+        font-size: 40px !important;
+        color: rgb(52, 88, 156);
+        padding-left: 10% !important;
+    }
+    .formIcon i:hover {
+        color: white;
+    }
+    .contactPicture img {
+        border-radius: 50% !important;
+        margin-top: 50% !important;
+    }
+}
+
+@media screen and (max-width:599px) {
+    .complantInfo {
+        width: 100% !important;
+        margin: auto;
+        padding: 23% 0 6% 0 !important;
+    }
+    .pen-section .i1, .pen-section .i2 {
+        width: 10% !important;
+    }
+    .pen-section .p1, .pen-section .p2 {
+        width: 90% !important;
+    }
+    .complaintImg {
+        width: 100% !important;
+        margin: auto !important;
+        padding-top: 30px !important;
+    }
+    .complaints-securety {
+        margin: auto !important;
+        width: 100% !important;
+    }
+    .contactUsContain {
+        background: linear-gradient(45deg, rgb(52, 88, 156), white);
+        width: 100% !important;
+        height: 530px !important;
+        margin: auto;
+        margin-bottom: 15%;
+        border-radius: 30px;
+    }
+    .contactInput button {
+        margin: auto;
+        background-color: rgb(52, 88, 156);
+        color: white;
+        padding: 5px 30px;
+        margin-left: 8% !important;
+        margin-top: 20px;
+        border-radius: 10px;
+        font-weight: 600;
+    }
+    .contactInput
+    {
+        width: 100% !important;
+    }
+    .contactInput button:hover {
+        color: rgb(52, 88, 156);
+        background-color: white;
+        font-weight: 600;
+    }
+    .contactInput input {
+        width: 100% !important;
+        outline: 0;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(240, 236, 236);
+    }
+    .contactInput input::placeholder {
+        color: rgb(170, 166, 166);
+        font-weight: 600;
+    }
+    .contactInput textarea::placeholder {
+        color: rgb(170, 166, 166);
+        font-weight: 600;
+    }
+    .contactInput h4 {
+        color: rgb(52, 88, 156);
+        margin-top: 20px;
+    }
+    .contactInput textarea {
+        width: 100% !important;
+        outline: 0;
+        border: none;
+        height: 70px !important;
+        border-radius: 10px;
+        background-color: rgb(240, 236, 236);
+    }
+    .contactPicture
+    {
+        width: 100% !important;
+        margin-top: 65% !important;
+
+    }
+    .contactPicture img
+    {
+        width: 100% !important;
+        border-radius: 50%;
+
+    }
+   
+    .formIcon {
+        margin-top: 30px;
+        margin-left: 45% !important;
+    }
+    .formIcon i {
+        font-size: 40px !important;
+        color: rgb(52, 88, 156);
+        padding-left: 10% !important;
+    }
+    .formIcon i:hover {
+        color: white;
+    }
+
+} 
+
+/* end complaints media query */
+
+/* start complaints-header  */
+
+
+.complaintsSec {
+    background-image: url(../images/Complaints-1024x684.jpg);
+    background-attachment: fixed;
+    text-align: center;
+    background-size: cover;
+    color: white;
+    overflow: hidden;
+}
+
+.complaintImg {
+    margin-bottom: 60px;
+}
+
+.complaintImg img {
+    border-radius: 15%;
+}
+
+.complaintOpacity {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255,255,255,.6);
+}
+.specialSec
+{
+    padding-top: 3%;
+}
+.complantInfo  {
+    padding-top:12% ;
+}
+
+.complaintOpacity .complantInfo h1 {
+    color: rgb(52, 88, 156);
+    font-weight: 600;
+    font-size: 33px;
+}
+
+.complaintOpacity .complantInfo .pSpecial {
+    color: rgb(77, 75, 75);
+    font-weight: 600;
+    font-size: 20px;
+    animation-name: headDisplay;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes headDisplay {
+    0% {
+        opacity: 1;
+    }
+    10% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.complaints-securety {
+    overflow: hidden;
+    width: 100%;
+}
+
+.pen-section .sec1 .i1, .pen-section .sec1 .p1 {
+    float: right;
+    display: inline;
+}
+
+.pen-section .sec1 .i2, .pen-section .sec1 .p2 {
+    float: right;
+    display: inline;
+}
+
+.pen-section .i1, .pen-section .i2 {
+    width: 8%;
+}
+
+.pen-section .paragrah {
+    color: rgb(77, 75, 75);
+}
+
+.pen-section .p1, .pen-section .p2 {
+    width: 80%;
+}
+
+.pen-section .sec1 .p1 p, .pen-section .sec1 .i1 i {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.pen-section .sec1 .p2 p, .pen-section .sec1 .i2 i {
+    font-size: 19px !important;
+    font-weight: 700 !important;
+}
+
+.pen-section .sec1 .p1, .pen-section .sec1 .p2 {
+    padding-right: 2px;
+}
+
+.complaints-securety i, .complaints-securety .another-one {
+    color: rgb(52, 88, 156);
+}
+
+.complaints-securety .another-one {
+    font-weight: 500;
+}
+
+/* end complaints-header  */
+
+/* start submit your complaint */
+
+/* start  contact-us */
+
+.contactUsContain {
+    background: linear-gradient(45deg, rgb(52, 88, 156), white);
+    width: 90%;
+    height: 580px;
+    margin: auto;
+    margin-bottom: 15%;
+    border-radius: 30px;
+    padding: 0 50px 0 50px;
+}
+
+.contactInput button {
+    margin: auto;
+    background-color: rgb(52, 88, 156);
+    color: white;
+    padding: 5px 30px;
+    margin-left: 8%;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.contactInput button:hover {
+    color: rgb(52, 88, 156);
+    background-color: white;
+    font-weight: 600;
+}
+
+.contactInput input {
+    width: 100%;
+    outline: 0;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(240, 236, 236);
+}
+
+.contactInput input::placeholder {
+    color: rgb(170, 166, 166);
+    font-weight: 600;
+}
+
+.contactInput textarea::placeholder {
+    color: rgb(170, 166, 166);
+    font-weight: 600;
+}
+
+.contactInput h4 {
+    color: rgb(52, 88, 156);
+    margin-top: 20px;
+}
+
+.contactInput textarea {
+    width: 100%;
+    outline: 0;
+    border: none;
+    height: 85px;
+    border-radius: 10px;
+    background-color: rgb(240, 236, 236);
+}
+
+.contactPicture img {
+    width: 100;
+}
+
+.formIcon {
+    margin-top: 30px;
+}
+
+.formIcon i {
+    font-size: 50px;
+    color: rgb(52, 88, 156);
+}
+
+.formIcon i:hover {
+    color: white;
+}
+
+.contactPicture {
+    margin-top: 22%;
+}
+
+.contactPicture img {
+    border-radius: 50%;
+    margin-top: 40px;
+}
+
+/* end  contact-us */
+/* end submit your complaint */
+
+/* -------------------------------------end complaints page ----------------------------------------*/
+/* --------------------------------------------------------Start Common-Question Page------------------------------------------------------- */
+
+/* Start common-header */
+
+#commenQuestionSec hr {
+    position: relative;
+    background-color: rgb(65, 103, 173);
+}
+
+#commenQuestionSec h2 {
+    background-color: rgb(65, 103, 173);
+    color: white;
+    border-radius: 30px;
+    position: absolute;
+    top: -16%;
+    left: 15%;
+}
+
+.allCommonQuestion {
+    background-image: url(../images/istock-1211202460.jpg);
+    background-attachment: fixed;
+    text-align: center;
+    background-size: cover;
+    color: white;
+} 
+
+.commonQuestionOpacity {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255,255,255,.3);
+}
+
+.opacityContent {
+    padding-top: 10%;
+}
+
+.opacityContent h2 {
+    font-size: 35px;
+    color: rgb(52, 88, 156);
+    font-weight: 600;
+    text-align: center;
+}
+
+.opacityContent p {
+    font-size: 25px;
+    color: rgb(75, 68, 68);
+    animation-name: headDisplay;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    text-align: center;
+}
+
+@keyframes headDisplay {
+    0% {
+        opacity: 1;
+    }
+    10% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Start Questions Section */
+
+.ques {
+    text-align: right;
+}
+
+.ques h2 {
+    text-align: center;
+    color: rgb(52, 88, 156);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.contAccording {
+    width: 60%;
+    margin:  auto;
+}
+
+.according {
+    width: 100%;
+    border: none;
+    background-color: rgb(52, 88, 156);
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+    padding: 10px 20px;
+    text-align: right;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.according button {
+    outline: none;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.according::after {
+    content: "+";
+    font-weight: 900;
+    color: rgb(52, 88, 156);
+    background-color: white;
+    border-radius: 50%;
+    padding: 1.5px 9px;
+    font-size: 20px;
+    float: left;
+}
+
+.according::before {
+    content: "?";
+    font-weight: 900;
+    font-weight: 900;
+    color: rgb(52, 88, 156);
+    background-color: white;
+    border-radius: 50%;
+    padding: 2px 9px;
+    font-size: 20px;
+}
+
+.description {
+    background-color: rgb(52, 88, 156);
+    /* padding:5px; */
+    max-height: 0;
+    overflow: hidden;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: .4s;
+}
+
+.activeAcording::after {
+    content: "-";
+    font-weight: 900;
+    color: rgb(52, 88, 156);
+    background-color: white;
+    border-radius: 50%;
+    padding: 1.5px 12px;
+    font-size: 20px;
+    float: left;
+}
+
+.description ul {
+    list-style: none;
+}
+
+.description ul li::before {
+    content: "";
+    width: 0.4rem;
+    height: 0.4rem;
+    display: inline-block;
+    background-color:white;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+.description ul li {
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}
+.spcialItem
+{
+  padding-bottom:27%;  
+}
+
+/* End Questions Section */
+
+/* End common-header */
+
+/*  Start Resposive for Common-Questions Page */
+
+@media screen and (min-width:1200px) {
+    .ques hr {
+        position: relative;
+    }
+    .ques h2 {
+        font-size: 1.6rem;
+        position: absolute;
+        width: 70%;
+        right: 15%;
+    }
+}
+
+@media screen and (min-width:992px)and (max-width:1200px) {
+    .ques hr {
+        position: relative;
+    }
+    .ques h2 {
+        font-size: 1.6rem;
+        position: absolute;
+        width: 70%;
+        right: 15%;
+    }
+ 
+}
+
+@media screen and (min-width:768px)and (max-width:991px) {
+    .ques hr {
+        position: relative;
+    }
+    .ques h2 {
+        font-size: 1.4rem;
+        position: absolute;
+        width: 70%;
+        right: 15%;
+    }
+    .ques .contAccording {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:600px)and (max-width:767px) {
+    .ques hr {
+        position: relative;
+    }
+    .ques h2 {
+        font-size: 1.3rem;
+        position: absolute;
+        width: 70%;
+        right: 15%;
+    }
+    .ques .contAccording {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .ques hr {
+        position: relative;
+    }
+    .ques h2 {
+        font-size: 1.2rem;
+        position: absolute;
+        width: 75%;
+        right: 12%
+    }
+    .ques .contAccording {
+        width: 90%;
+    }
+} 
+
+/* End Resposive for Common-Questions Page */
+
+/* --------------------------------------------------------End Common-Question Page------------------------------------------------------- */
+
+/* ---------------------------Start Reserv-Service Page---------------------------- */
+
+.res-ser-section {
+  margin-bottom: .5% ;
+}
+
+.res-service .content h4 {
+    font-size: 1.8rem;
+    color: rgb(65, 103, 173);
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.res-service .content p {
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.699);
+    width: 90%;
+    margin-bottom: 2% !important;
+}
+
+.res-service .content button {
+    border-radius: 20px;
+    background-color: rgb(65, 103, 173);
+    border: 2px solid rgb(65, 103, 173)!important;
+    box-shadow: 0 3px 10px rgba(94, 115, 155, 0.719);
+    transition: transform 0.5s;
+    margin-top: 28px;
+}
+
+.res-service {
+    margin-top: 50px!important;
+}
+
+.res-service img {
+    padding-bottom: 20%;
+}
+
+.res-service .content a button {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.res-service .content button:hover {
+    border: 3px solid rgb(65, 103, 173)!important;
+    background-color: rgb(197, 194, 194) !important;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    color: rgb(65, 103, 173) !important;
+}
+
+.res-service .content button:hover a {
+    color: white;
+}
+.light-dots {
+    background-image: url(../images/light_dot.jpg);
+}
+
+/* start Resev-Service media Quary */
+
+@media screen and (min-width:768px)and (max-width:991px){
+
+    .res-ser-section {
+        padding-bottom: 5% !important;
+    }
+    
+    .speImg
+    {
+        margin-top: 10% !important;
+    }
+    
+.res-service .content h4 {
+    font-size: 1.5rem;
+    color: rgb(65, 103, 173);
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.res-service .content p {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.699);
+    width: 90%;
+}
+
+
+}
+@media screen and (min-width:600px)and (max-width:767px) {
+    .res-ser-section {
+        padding-bottom: 5% !important;
+    }
+    
+    .speImg
+    {
+        margin-top: 10% !important;
+        margin: auto !important;
+    }
+
+.res-service .content h4 {
+    font-size: 1.7rem;
+    color: rgb(65, 103, 173);
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.res-service .content p {
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.699);
+    width: 90%;
+    margin-bottom: 2% !important;
+    margin-top: 2% !important;
+}
+
+}
+@media screen and (max-width:600px)
+{
+    .res-ser-section {
+        padding-bottom: 5% !important;
+    }
+    
+    .speImg
+    {
+        margin-top: 10% !important;
+        margin: auto !important;
+    }
+
+.res-service .content h4 {
+    font-size: 1.5rem;
+    color: rgb(65, 103, 173);
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.res-service .content p {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.699);
+    width: 90%;
+    margin-bottom: 2% !important;
+    margin-top: 2% !important;
+}
+}
+/* end Resev-Service media Quary */
+
+
+/* ---------------------------End Reserv-Service Page---------------------------- */
+/*----------------------------- start Reservation page =================================*/
+
+.reservationAll {
+    background-image: url(../images/close-up-shot-person-using-laptop_23-2148346192.jpg);
+    background-attachment: fixed;
+    text-align: center;
+    background-size: cover;
+    color: white;
+}
+
+.reservOpacity {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.reservOpacity .logInDiv {
+    background-color: rgba(255,255,255, 0.6);
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    margin-top: 1%;
+
+}
+.loginDivAll
+{
+    padding-top:8%;
+    padding-bottom: 8%;
+
+}
+
+.reservOpacity .logInDiv .allResContent {
+    margin-top: 8%;
+}
+.paragraphInfo
+{
+    color: rgb(65, 103, 173);
+    font-weight: 600;
+    margin-top: 15px;
+ 
+}
+
+.reservOpacity .logInDiv .resIcon i {
+    font-size: 50px;
+    padding: 20px;
+    margin: 5px;
+    color: rgb(65, 103, 173);
+    border-radius: 50%;
+}
+
+.reservOpacity .logInDiv .idDid i {
+    color: rgb(65, 103, 173);
+    font-size: 18px;
+}
+
+.reservOpacity .logInDiv .idDid input {
+    background-color: rgb(238, 234, 234);
+    width: 74%;
+    border-radius: 30px;
+    padding: 3px 8px;
+    height: 45px;
+    border: 1px rgb(65, 103, 173) solid;
+    outline: 0;
+    margin-top: 40px;
+}
+
+.reservOpacity .logInDiv .idDid input::placeholder {
+    color: rgb(65, 103, 173);
+    font-weight: 700;
+}
+
+.reservOpacity .logInDiv .buttonDiv a {
+    text-decoration: none;
+    background-color: rgb(65, 103, 173);
+    width: 73%;
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+    border-radius: 30px;
+    height: 45px;
+    border: rgb(65, 103, 173);
+    outline: 0;
+    margin-right: 77px;
+    margin-top: 20px;
+    padding: 5px 8px;
+}
+
+.reservOpacity .logInDiv .buttonDiv a:hover {
+    background-color: white;
+    color: rgb(65, 103, 173);
+}
+
+.iconHr {
+    width: 75%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+/* start Reservation media Query */
+
+@media screen and (min-width:992px)and (max-width:1200px)
+{
+
+    .reservOpacity .logInDiv {
+        background-color: rgba(243, 239, 239, 0.6);
+        width: 500px;
+        height: 500px;
+        margin: auto;
+        margin-top: 3%;
+    
+    }
+
+
+}
+@media screen and (min-width:768px)and (max-width:991px)
+{
+
+    .reservOpacity .logInDiv {
+        background-color: rgba(243, 239, 239, 0.6);
+        width: 500px;
+        height: 500px;
+        margin: auto;
+        margin-top: 4%;
+    
+    }
+    
+
+
+}
+@media screen and (min-width:600px)and (max-width:767px){
+
+    .reservOpacity .logInDiv {
+        background-color: rgba(243, 239, 239, 0.6);
+        width: 420px;
+        height: 450px;
+        margin: auto;
+        margin-top: 7%;
+    
+    }
+
+    .loginDivAll
+    {
+        padding-top:8%;
+        padding-bottom: 8%;
+    
+    }
+    
+    .reservOpacity .logInDiv .allResContent {
+        margin-top: 8%;
+    }
+    .paragraphInfo
+    {
+        color: rgb(65, 103, 173);
+        font-weight: 600;
+        margin-top: 15px;
+     
+    }
+    
+    .reservOpacity .logInDiv .resIcon i {
+        font-size: 50px;
+        padding: 20px;
+        margin: 5px;
+        color: rgb(65, 103, 173);
+        border-radius: 50%;
+    }
+    
+    .reservOpacity .logInDiv .idDid i {
+        color: rgb(65, 103, 173);
+        font-size: 17px;
+    }
+    
+    .reservOpacity .logInDiv .idDid input {
+        background-color: rgb(238, 234, 234);
+        width: 70%;
+        border-radius: 30px;
+        padding: 3px 8px;
+        height: 45px;
+        border: 1px rgb(65, 103, 173) solid;
+        outline: 0;
+        margin-top: 40px;
+    }
+    
+    .reservOpacity .logInDiv .idDid input::placeholder {
+        color: rgb(65, 103, 173);
+        font-weight: 700;
+    }
+    
+    .reservOpacity .logInDiv .buttonDiv a {
+        text-decoration: none;
+        background-color: rgb(65, 103, 173);
+        width: 70%;
+        color: white;
+        font-size: 18px;
+        font-weight: 900;
+        border-radius: 30px;
+        height: 45px;
+        border: rgb(65, 103, 173);
+        outline: 0;
+        margin-right: 18%;
+        margin-top: 20px;
+        padding: 5px 8px;
+    }
+    
+    .reservOpacity .logInDiv .buttonDiv a:hover {
+        background-color: white;
+        color: rgb(65, 103, 173);
+    }
+    
+    .iconHr {
+        width: 63%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+    
+
+}
+@media screen and (max-width:600px)
+{
+
+    .reservOpacity .logInDiv {
+        background-color: rgba(243, 239, 239, 0.6);
+        width: 370px;
+        height: 420px;
+        margin: auto;
+        margin-top: 10%;
+    
+    }
+
+    .loginDivAll
+    {
+        padding-top:8%;
+        padding-bottom: 8%;
+    
+    }
+    
+    .reservOpacity .logInDiv .allResContent {
+        margin-top: 8%;
+    }
+    .paragraphInfo
+    {
+        color: rgb(65, 103, 173);
+        font-weight: 600;
+        margin-top: 15px;
+     
+    }
+    
+    .reservOpacity .logInDiv .resIcon i {
+        font-size: 40px;
+        padding: 20px;
+        color: rgb(65, 103, 173);
+        border-radius: 50%;
+        margin-top: 3px;
+    }
+    
+    .reservOpacity .logInDiv .idDid i {
+        color: rgb(65, 103, 173);
+        font-size: 16px;
+    }
+    
+    .reservOpacity .logInDiv .idDid input {
+        background-color: rgb(238, 234, 234);
+        width: 65%;
+        border-radius: 30px;
+        padding: 3px 8px;
+        height: 45px;
+        border: 1px rgb(65, 103, 173) solid;
+        outline: 0;
+        margin-top: 40px;
+    }
+    
+    .reservOpacity .logInDiv .idDid input::placeholder {
+        color: rgb(65, 103, 173);
+        font-weight: 700;
+    }
+    
+    .reservOpacity .logInDiv .buttonDiv a {
+        text-decoration: none;
+        background-color: rgb(65, 103, 173);
+        width: 65%;
+        color: white;
+        font-size: 18px;
+        font-weight: 900;
+        border-radius: 30px;
+        height: 45px;
+        border: rgb(65, 103, 173);
+        outline: 0;
+        margin-right: 20%;
+        margin-top: 20px;
+        padding: 5px 8px;
+    }
+    
+    .reservOpacity .logInDiv .buttonDiv a:hover {
+        background-color: white;
+        color: rgb(65, 103, 173);
+    }
+    
+    .iconHr {
+        width: 63%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+}
+
+/* start Reservation media Query */
+
+
+/*----------------------------- end Reservation page =================================*/
+
+/*----------------------------- start login page =================================*/
+
+.loginBackPhoto {
+    background-image: url(../images/website-backgrounds.jpg);
+    background-attachment: fixed;
+    text-align: center;
+    background-size: cover;
+    color: white;
+    position: relative;
+}
+
+.loginOpacity {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.loginOpacityContentFirst {
+    background-image: url(../images/33.jpg);
+    text-align: center;
+    background-size: cover;
+    color: white;
+    position: relative;
+    height: 23%;
+    width: 100%;
+}
+
+.loginOpacityContentFirst {
+    font-size: 16px;
+    color: white;
+}
+
+.lodImageOpacity h4 {
+    color: white;
+    font-weight: 600;
+    padding-top: 30px;
+}
+
+.lodImageOpacity p {
+    font-weight: 500;
+    color: rgb(202, 199, 199);
+    animation-name: headDisplay;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes headDisplay {
+    0% {
+        opacity: 1;
+    }
+    10% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.lodImageOpacity {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.loginOpacityContentLast {
+    width: 100%;
+    height: 58%;
+    background-color: white;
+}
+
+.loginOpacityContent {
+    width: 36%;
+    margin: auto;
+    padding-top:8% ;
+    padding-bottom:8% ;
+
+}
+
+.loginInput {
+    width: 70%;
+    padding-top: 25px;
+    margin-right: 30px;
+}
+
+.loginInput label {
+    width: 20%;
+    color: rgb(52, 88, 156);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.loginInput input {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    width: 60%;
+    margin-right: 15px;
+}
+
+.loginInput select {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    width: 60%;
+    margin-right: 15px;
+}
+
+.loginInput input::placeholder {
+    color: rgb(148, 141, 141);
+}
+
+.loginHr1 {
+    margin-right: 30%;
+    width: 55%;
+    background-color: rgb(52, 88, 156);
+}
+
+.loginHr2 {
+    margin-right: 30%;
+    width: 55%;
+    background-color: rgb(52, 88, 156);
+}
+
+.loginButton {
+    margin-top: 30px;
+}
+
+.loginButton button {
+    border: 0;
+    outline: 0;
+    background-color: rgb(52, 88, 156);
+    color: white;
+    padding: 5px 30px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.loginButton button:hover {
+    background-color: rgb(128, 124, 124);
+    color: white;
+}
+.speciaIcon
+{
+    position: absolute;
+    top: 10%;
+}
+/* start login media Query */
+@media screen and (min-width:922px)and (max-width:1200px)
+{
+    .loginOpacityContent 
+    {
+        padding-top: 10% !important;
+    } 
+
+
+
+.loginOpacityContentLast {
+    width: 100%;
+    height: 55%;
+    background-color: white;
+}
+
+.loginOpacityContent {
+    width: 43%;
+    margin: auto;
+    padding-top:8% ;
+    padding-bottom:8% ;
+
+}
+
+.loginInput {
+    width: 70%;
+    padding-top: 25px;
+    margin-right: 30px;
+}
+
+.loginInput label {
+    width: 18%;
+    color: rgb(52, 88, 156);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.loginInput input {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    width: 55%;
+    margin-right: 15px;
+}
+
+
+.loginButton button {
+    border: 0;
+    outline: 0;
+    background-color: rgb(52, 88, 156);
+    color: white;
+    padding: 4px 25px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.loginButton button:hover {
+    background-color: rgb(128, 124, 124);
+    color: white;
+}
+}
+@media screen and (min-width:768px)and (max-width:991px)
+{
+    .loginOpacityContent 
+    {
+        padding-top: 11% !important;
+    } 
+
+
+
+    .loginOpacityContent {
+        width: 47%;
+        margin: auto;
+        padding-top:8% ;
+        padding-bottom:8% ;
+    
+    }
+    
+    .loginInput {
+        width: 70%;
+        padding-top: 25px;
+        margin-right: 30px;
+    }
+    
+    .loginInput label {
+        width: 18%;
+        color: rgb(52, 88, 156);
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+.loginInput label {
+    width: 18%;
+    color: rgb(52, 88, 156);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+
+.loginButton button {
+    border: 0;
+    outline: 0;
+    background-color: rgb(52, 88, 156);
+    color: white;
+    padding: 4px 25px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.loginButton button:hover {
+    background-color: rgb(128, 124, 124);
+    color: white;
+}
+
+}
+@media screen and (min-width:600px)and (max-width:767px)
+{
+    .loginOpacityContent 
+    {
+        padding-top: 14% !important;
+    } 
+
+.loginOpacityContentLast {
+    width: 100%;
+    height: 54%;
+    background-color: white;
+}
+
+
+.loginOpacityContent {
+    width:55%;
+    margin: auto;
+    padding-top:8% ;
+    padding-bottom:8% ;
+
+}
+
+.loginInput {
+    width: 60%;
+    padding-top: 25px;
+    margin-right: 30px;
+}
+
+.loginInput label {
+    width: 18%;
+    color: rgb(52, 88, 156);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+.loginButton button {
+    border: 0;
+    outline: 0;
+    background-color: rgb(52, 88, 156);
+    color: white;
+    padding: 4px 20px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.loginButton button:hover {
+    background-color: rgb(128, 124, 124);
+    color: white;
+}
+.speciaIcon
+{
+    position: absolute;
+    top:8%;
+}
+}
+@media screen and (max-width:600px) 
+{
+    .loginOpacityContent 
+    {
+        padding-top: 18% !important;
+    } 
+
+.loginOpacityContentLast {
+    width: 100%;
+    height: 55%;
+    background-color: white;
+}
+
+.loginOpacityContent {
+    width: 67%;
+    margin: auto;
+    padding-top:8% ;
+    padding-bottom:8% ;
+
+}
+
+.loginInput {
+    width: 50%;
+    padding-top: 25px;
+    margin-right: 30px;
+}
+
+
+.loginInput label {
+    width: 22%;
+    color: rgb(52, 88, 156);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+.loginButton button {
+    border: 0;
+    outline: 0;
+    background-color: rgb(52, 88, 156);
+    color: white;
+    padding: 4px 20px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.loginButton button:hover {
+    background-color: rgb(128, 124, 124);
+    color: white;
+}
+.speciaIcon
+{
+    position: absolute;
+    top:8%;
+}
+}
+/* end login media Query */
+
+/*----------------------------- end  login page =================================*/
+/* /============================== start information page ========================/ */
+
+.informationAll {
+    background-image: url(../images/hgjgh.jpg);
+    background-attachment: fixed;
+    text-align: center;
+    background-size: cover;
+    color: white;
+}
+
+.informationOpacity {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.paragraphInfo2 {
+    font-weight: 600;
+    color: white;
+    padding-bottom: 6px;
+}
+
+.infoIcons {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.infoIcons i {
+    font-size: 60px;
+    color: white;
+}
+
+.infoLogin input {
+    width: 80%;
+    height: 50px;
+    border: none;
+    outline: 0;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: auto;
+}
+
+.infoLogin input::placeholder {
+    font-weight: 600;
+    color: rgb(65, 103, 173);
+}
+
+.infoLogin button {
+    width: 80%;
+    height: 50px;
+    border: none;
+    outline: 0;
+    background-color: rgb(65, 103, 173);
+    margin: auto;
+    margin-top: 30px;
+    font-weight: 600;
+    color: white !important;
+    border-radius: 10px;
+}
+
+.infoLogin a button {
+    color: white;
+}
+
+.infoLogin button:hover {
+    color: rgb(65, 103, 173);
+    background-color: rgb(117, 114, 114);
+}
+
+.infoLogAll {
+    padding-top: 9%;
+    padding-bottom: 8%;
+}
+
+.infoLogin {
+    width: 38%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    height: 430px;
+    background: linear-gradient(90deg, rgb(255, 255, 255, 0.6), rgb(65, 103, 173));
+}
+
+@media screen and (min-width:992px)and (max-width:1200px) {
+    .infoLogin {
+        width: 45%;
+    }
+    .infoLogAll {
+        padding-top: 12%;
+    }
+}
+@media screen and (min-width:768px)and (max-width:991px) {
+    .infoLogin {
+        width: 46%;
+    }
+    .infoLogAll {
+        padding-top: 12.5%;
+    }
+}
+
+@media screen and (min-width:600px)and (max-width:767px) {
+    .infoLogin {
+        width: 54%;
+    }
+    .infoLogAll {
+        padding-top: 13%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .infoLogin {
+        width: 65%;
+    }
+    .infoLogAll {
+        padding-top: 17%;
+    }
+}
+
+/* /============================== end information page ========================/ */
+/* -----------------------------Start Requiry Page----------------------------- */
+
+.requirySection {
+    background-image: url(../images/unnamed.png);
+    background-attachment: fixed;
+    text-align: center;
+    background-size: cover;
+    color: white;
+}
+
+.requirySection input {
+    cursor: not-allowed;
+}
+
+.requiryOpacity {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.requiryDivAll {
+    padding-top: 9%;
+    padding-bottom: 8%;
+}
+
+.requiryOpacity .requiryDiv {
+    background-color: rgba(243, 239, 239, 0.8);
+    width: 50%;
+    margin-top: 20%;
+}
+
+.requiryOpacity .requiryDiv h3 {
+    color: rgb(65, 103, 173);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.requiryOpacity .requiryDiv .icon {
+    font-size: 1.7rem;
+    color: rgb(65, 103, 173);
+    margin: 5px 10px;
+}
+
+.requiryOpacity .requiryDiv button {
+    background-color: rgb(65, 103, 173);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 30px;
+}
+
+.requiryOpacity .requiryDiv a button {
+    color: white;
+    text-decoration: none;
+}
+
+.requiryOpacity .requiryDiv input::placeholder {
+    color: rgb(65, 103, 173);
+    font-weight: 700;
+}
+
+.requiryOpacity .requiryDiv p {
+    color: rgb(65, 103, 173);
+    font-size: 1rem;
+    font-weight: 600;
+}
+@media screen and (min-width:992px)and (max-width:1200px) {
+    .requiryOpacity .requiryDiv {
+        width: 52%;
+    }
+    .requiryDivAll {
+        padding-top: 12%;
+    }
+}
+@media screen and (min-width:768px)and (max-width:991px) {
+    .requiryOpacity .requiryDiv {
+        width: 53%;
+    }
+    .requiryDivAll {
+        padding-top: 13%;
+    }
+}
+
+
+@media screen and (min-width:600px)and (max-width:767px) {
+    .requiryOpacity .requiryDiv {
+        width: 65%;
+    }
+    .requiryDivAll {
+        padding-top: 15%;
+    }
+}
+
+@media screen and (max-width:599px) {
+    .requiryOpacity .requiryDiv {
+        width: 65%;
+        margin-top: 20%;
+    }
+    .requiryDivAll {
+        padding-top: 18%;
+    }
+    .requiryOpacity .requiryDiv button {
+        font-size: 0.9rem;
+    }
+}
+
+/* -----------------------------End Requiry Page----------------------------- */
+
+
+
+
